@@ -1,3 +1,101 @@
-@import url("reset.css");html{font-size:62.5%;-webkit-box-sizing:border-box;box-sizing:border-box}body{background-color:#212521;background-image:url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2318180f' fill-opacity='1'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}.menu{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.menu-hidden{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-flex:0;-ms-flex:0 0 calc(50% + 1.3rem);flex:0 0 calc(50% + 1.3rem)}.menu-hidden-btn{font-family:"Open Sans",sans-serif;font-size:1.2rem;font-weight:bold;color:#fff;margin-top:2.3rem;padding-right:1rem}.menu-hidden-line{height:0.1rem;background:#bea77f;margin-top:2.8rem;-webkit-box-flex:1;-ms-flex:1 1 1rem;flex:1 1 1rem}.about-header-border{max-width:26.6rem;margin:5.2rem auto}.about-header{border:1px solid #bea77f;font-family:"Open Sans",sans-serif;font-size:2rem;font-weight:300;color:#fff;padding:2.2rem 1.2rem 3.2rem 1.2rem;position:relative}.about-position{letter-spacing:-0.13rem;color:#bea77f;font-weight:bold}.about-in-training{font-family:Domine,serif;font-size:1.2rem;position:absolute;left:18.8rem}.hello-bg{background:#212521}.hello-container{max-width:26.6rem;margin:0 auto;padding:4rem 2.8rem;position:relative}.paragraph{font-family:Domine,serif;color:#a9aaa9;font-size:1.2rem;line-height:1.8rem;letter-spacing:-0.06rem}.profile-photo{margin-top:1.5rem;margin-left:3.3rem}.section-group{display:inline;font-family:Domine,serif;color:#fff;font-size:5.2rem;position:absolute;bottom:2rem;letter-spacing:-0.4rem}.section-line{height:0.2rem;width:12.4rem;background:#bea77f}
+@import url("reset.css");
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  background-color: #212521;
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2318180f' fill-opacity='1'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.menu-hidden {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(50% + 1.3rem);
+          flex: 0 0 calc(50% + 1.3rem); }
+  .menu-hidden button {
+    border: none;
+    background: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 1.9rem;
+    padding-right: 1rem; }
+  .menu-hidden div {
+    height: 0.1rem;
+    background: #bea77f;
+    margin-top: 2.8rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 1rem;
+            flex: 1 1 1rem; }
+
+.about header {
+  max-width: 26.6rem;
+  margin: 5.2rem auto; }
+
+.about-box {
+  border: 1px solid #bea77f;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #fff;
+  padding: 2.2rem 1.2rem 3.2rem 1.2rem;
+  position: relative; }
+
+.about-position {
+  letter-spacing: -0.13rem;
+  color: #bea77f;
+  font-weight: bold; }
+
+.about-in-training {
+  font-family: Domine, serif;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 18.8rem; }
+
+.hello-bg {
+  background: #212521; }
+
+.hello-container {
+  max-width: 26.6rem;
+  margin: 0 auto;
+  padding: 4rem 2.8rem;
+  position: relative; }
+
+.paragraph {
+  font-family: Domine, serif;
+  color: #a9aaa9;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  letter-spacing: -0.06rem; }
+
+.profile-photo {
+  margin-top: 1.5rem;
+  margin-left: 3.3rem; }
+
+.section-header-container {
+  display: inline;
+  font-family: Domine, serif;
+  color: #fff;
+  font-size: 5.2rem;
+  position: absolute;
+  bottom: 2rem;
+  letter-spacing: -0.4rem; }
+
+.section-line {
+  height: 0.2rem;
+  width: 12.4rem;
+  background: #bea77f; }
 
 /*# sourceMappingURL=styles.css.map */

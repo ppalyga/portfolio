@@ -32,38 +32,42 @@ body {
 
 .menu-hidden {
     display: flex;
-    flex: 0 0 calc(50% + 1.3rem);
-}
+    flex: 0 0 calc(50% + 1.3rem);    
 
-.menu-hidden-btn {  
+    button {
+    border: none;
+    background: none;  
     font-family: $open;
     font-size: 1.2rem;
     font-weight: bold;
     color: $white;
-    margin-top: 2.3rem;
+    margin-top: 1.9rem;
     padding-right: 1rem;
-}
+    }
 
-.menu-hidden-line {
+    div {
     height: 0.1rem;
     background: $accent;
     margin-top: 2.8rem;
     flex: 1 1 1rem;
+    }
 }
 
-.about-header-border {
+.about {
+    header {
     max-width: 26.6rem;
     margin: 5.2rem auto;
+    }
 }
 
-.about-header {
-    border: 1px solid $accent;
-    font-family: $open;
-    font-size: 2rem;
-    font-weight: 300;
-    color: $white;
-    padding: 2.2rem 1.2rem 3.2rem 1.2rem;
-    position: relative;
+.about-box {
+border: 1px solid $accent;
+font-family: $open;
+font-size: 2rem;
+font-weight: 300;
+color: $white;
+padding: 2.2rem 1.2rem 3.2rem 1.2rem;
+position: relative;
 }
 
 .about-position {
@@ -103,7 +107,7 @@ body {
     margin-left: 3.3rem;
 }
 
-.section-group {
+.section-header-container {
     display: inline;
     font-family: $domine;
     color: $white;
