@@ -1,0 +1,120 @@
+@import url("reset.css");
+
+// COLORS
+$lightgrey: #a9aaa9;
+$mediumgrey: #212521;
+$darkgrey: #18180f;
+$accent: #bea77f;
+$white: #fff;
+
+// FONTS
+$domine: Domine, serif;
+$open: "Open Sans", sans-serif;
+
+// WIDTHS
+$widthmobile: 26.6rem;
+
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #212521;
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2318180f' fill-opacity='1'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-hidden {
+    display: flex;
+    flex: 0 0 calc(50% + 1.3rem);
+}
+
+.menu-hidden-btn {  
+    font-family: $open;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: $white;
+    margin-top: 2.3rem;
+    padding-right: 1rem;
+}
+
+.menu-hidden-line {
+    height: 0.1rem;
+    background: $accent;
+    margin-top: 2.8rem;
+    flex: 1 1 1rem;
+}
+
+.about-header-border {
+    max-width: 26.6rem;
+    margin: 5.2rem auto;
+}
+
+.about-header {
+    border: 1px solid $accent;
+    font-family: $open;
+    font-size: 2rem;
+    font-weight: 300;
+    color: $white;
+    padding: 2.2rem 1.2rem 3.2rem 1.2rem;
+    position: relative;
+}
+
+.about-position {
+    letter-spacing: -0.13rem;
+    color: $accent;
+    font-weight: bold;   
+}
+
+.about-in-training {
+    font-family: $domine;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 18.8rem; 
+}
+
+.hello-bg {
+    background: $mediumgrey;
+}
+
+.hello-container {
+    max-width: $widthmobile;
+    margin: 0 auto;
+    padding: 4rem 2.8rem;
+}
+
+.paragraph {
+    font-family: $domine;
+    color: $lightgrey;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    letter-spacing: -0.06rem;
+}
+
+.profile-photo {
+    margin-top: 1.5rem;
+    margin-left: 3.3rem;
+    position: relative;
+}
+
+.section-group {
+    display: inline;
+    font-family: $domine;
+    color: $white;
+    font-size: 5.2rem;
+    position: absolute;
+    bottom: 2rem;
+    letter-spacing: -0.4rem;
+}
+
+.section-line {
+    height: 0.2rem;
+    width: 12.4rem;
+    background: $accent;
+}
