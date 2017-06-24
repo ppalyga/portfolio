@@ -87,6 +87,7 @@ body {
     max-width: $widthmobile;
     margin: 0 auto;
     padding: 4rem 2.8rem;
+    position: relative;
 }
 
 .paragraph {
@@ -100,7 +101,6 @@ body {
 .profile-photo {
     margin-top: 1.5rem;
     margin-left: 3.3rem;
-    position: relative;
 }
 
 .section-group {
