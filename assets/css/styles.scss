@@ -11,9 +11,9 @@ $white: #fff;
 $domine: Domine, serif;
 $open: "Open Sans", sans-serif;
 
-// WIDTHS
+// LAYOUT
 $widthmobile: 26.6rem;
-
+$marginmobile: 2.8rem;
 
 html {
     font-size: 62.5%;
@@ -30,11 +30,12 @@ body {
     justify-content: flex-end;
 }
 
-.menu-hidden {
+.menu--hidden {
     display: flex;
     flex: 0 0 calc(50% + 1.3rem);    
+}
 
-    button {
+.menu--hidden__btn {
     border: none;
     background: none;  
     font-family: $open;
@@ -43,24 +44,21 @@ body {
     color: $white;
     margin-top: 1.9rem;
     padding-right: 1rem;
-    }
+}
 
-    div {
+.menu--hidden__line {
     height: 0.1rem;
     background: $accent;
     margin-top: 2.8rem;
     flex: 1 1 1rem;
-    }
 }
 
-.about {
-    header {
+.about__header {
     max-width: 26.6rem;
     margin: 5.2rem auto;
-    }
 }
 
-.about-box {
+.about__box {
 border: 1px solid $accent;
 font-family: $open;
 font-size: 2rem;
@@ -70,31 +68,31 @@ padding: 2.2rem 1.2rem 3.2rem 1.2rem;
 position: relative;
 }
 
-.about-position {
+.about__position-item {
     letter-spacing: -0.13rem;
     color: $accent;
     font-weight: bold;   
 }
 
-.about-in-training {
+.about__in-training-item {
     font-family: $domine;
     font-size: 1.2rem;
     position: absolute;
     left: 18.8rem; 
 }
 
-.hello-bg {
+.hello {
     background: $mediumgrey;
 }
 
-.hello-container {
+.hello__container {
     max-width: $widthmobile;
     margin: 0 auto;
     padding: 4rem 2.8rem;
     position: relative;
 }
 
-.paragraph {
+.hello__paragraph {
     font-family: $domine;
     color: $lightgrey;
     font-size: 1.2rem;
@@ -102,23 +100,53 @@ position: relative;
     letter-spacing: -0.06rem;
 }
 
-.profile-photo {
+.hello__profile-photo {
     margin-top: 1.5rem;
     margin-left: 3.3rem;
 }
 
-.section-header-container {
-    display: inline;
+.hello__section-header-container {
+    display: inline;   
+    position: absolute;
+    bottom: 6rem;    
+}
+
+.hello__section-header {
     font-family: $domine;
     color: $white;
     font-size: 5.2rem;
-    position: absolute;
-    bottom: 2rem;
     letter-spacing: -0.4rem;
 }
 
-.section-line {
+.hello__section-line {
     height: 0.2rem;
     width: 12.4rem;
     background: $accent;
+}
+
+.bullets {
+    position: absolute;
+    bottom: 5rem;
+    left: $marginmobile;
+}
+
+.bullets__item {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 1px solid $accent;
+    margin: 0.8rem 0;
+}
+
+.bullets__item--selected {
+    background: $accent;
+}
+
+.bullets__label {
+    font-size: 1.2rem;
+    font-family: $domine;
+    color: $white;
+    display: block;
+    transform: rotate(-90deg)
+               translate(2.4rem, -2.1rem);
 }

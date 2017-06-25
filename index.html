@@ -14,32 +14,33 @@
 
 <body>
     <nav class="menu">
-        <div class="menu-hidden">
-            <button>MENU</button>
-            <div></div>
+        <div class="menu menu--hidden">
+            <button class="menu--hidden__btn">MENU</button>
+            <div class="menu--hidden__line"></div>
         </div>
     </nav>
-    <div class="bullets">
-        <div class="bullet1"></div>
-        <div class="bullet2"></div>
-        <div class="bullet3"></div>
-    </div>
     <section class="about">
-        <header>
-            <div class="about-box">
+        <header class="about__header">
+            <div class="about__box">
                 <h1>Przemysław Pałyga<br/>
-                    <span class="about-position">Junior Front-End Developer</span><br/>
-                    <span class="about-in-training">in training</span></h1>
+                    <span class="about__position-item">Junior Front-End Developer</span><br/>
+                    <span class="about__in-training-item">in training</span></h1>
             </div>
         </header>
-        <div class="hello-bg">
-            <div class="hello-container">
-                <p class="paragraph">I'm a self-taught who wants to put his knowledge into professional practice. The power of simplicity is something
+        <div class="hello">
+            <div class="hello__container">
+                <div class="bullets">
+                    <span class="bullets__label">about me</span>
+                    <div class="bullets__item bullets__item--selected"></div>
+                    <div class="bullets__item"></div>
+                    <div class="bullets__item"></div>
+                </div>
+                <p class="hello__paragraph">I'm a self-taught who wants to put his knowledge into professional practice. The power of simplicity is something
                     I believe in and I always do my best to write code that is clean, properly structured and light.</p>
-                <img src="assets/imgs/profile-photo.jpg" alt="A profile photo of Przemysław Pałyga, Junior Front-End Developer" class="profile-photo">
-                <div class="section-header-container">
-                    <span class="section-header">hello</span>
-                    <div class="section-line"></div>
+                <img class="hello__profile-photo" src="assets/imgs/profile-photo.jpg" alt="A profile photo of Przemysław Pałyga, Junior Front-End Developer">
+                <div class="hello__section-header-container">
+                    <span class="hello__section-header">hello</span>
+                    <div class="hello__section-line"></div>
                 </div>
 
             </div>
