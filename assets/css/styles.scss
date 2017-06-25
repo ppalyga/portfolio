@@ -44,7 +44,7 @@ body {
 
     &--hello {
         right: 0rem;
-        bottom: 2rem;
+        bottom: 6rem;
     }  
 }
 
@@ -140,6 +140,7 @@ position: relative;
 
 .hello {
     background: $mediumgrey;
+    position: relative;
 }
 
 .hello__profile-photo {
