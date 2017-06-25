@@ -70,6 +70,7 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
     color: $white;
+    outline: none;
 }
 
 .bullets__item {
@@ -93,6 +94,19 @@ body {
                translate(2.4rem, -2.1rem);
 }
 
+.section-header {
+    font-family: $domine;
+    color: $white;
+    font-size: 5.2rem;
+    letter-spacing: -0.4rem;
+}
+
+.section-line {
+    height: 0.2rem;
+    width: 12.4rem;
+    background: $accent;
+}
+
 //MENU
 .menu--hidden {
     display: flex;
@@ -112,6 +126,17 @@ body {
         margin-top: 2.8rem;
         flex: 1 1 30%;
     }
+}
+
+.menu--visible {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(33, 37, 33, .97) 0%,rgba(0, 0, 0, .97) 100%);
+    z-index: 100;
+    transition: all 0.5s;
+    opacity: 0; 
 }
 
 //ABOUT
@@ -138,25 +163,15 @@ position: relative;
     left: 18.8rem; 
 }
 
-.hello {
+.about__hello {
     background: $mediumgrey;
     position: relative;
 }
 
-.hello__profile-photo {
+.about__profile-photo {
     margin-top: 1.5rem;
     margin-left: 3.3rem;
 }
 
-.hello__section-header {
-    font-family: $domine;
-    color: $white;
-    font-size: 5.2rem;
-    letter-spacing: -0.4rem;
-}
 
-.hello__section-line {
-    height: 0.2rem;
-    width: 12.4rem;
-    background: $accent;
-}
+
