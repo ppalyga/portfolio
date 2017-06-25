@@ -8,6 +8,7 @@
     <title>Przemysław Pałyga - Junior Front-End Developer Portfolio</title>
     <meta name="description" content="I'm a self-taught who wants to put his knowledge into professional practice. The power of simplicity is something I believe in and I always do my best to write code that is clean, properly structured and light. Visit my portfolio and get to know me!"
     />
+    <meta name="theme-color" content="#212521">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Domine|Open+Sans:300,700&amp;subset=latin-ext" rel="stylesheet">
 </head>
@@ -15,36 +16,43 @@
 <body>
     <nav class="menu">
         <div class="menu menu--hidden">
-            <button class="menu--hidden__btn">MENU</button>
+            <div class="menu--hidden__holder"></div>
+            <button class="text-btn menu--hidden__btn">MENU</button>
             <div class="menu--hidden__line"></div>
         </div>
     </nav>
+
     <section class="about">
-        <header class="about__header">
-            <div class="about__box">
+        <header class="container container--info-box">
+            <div class="info-box">
                 <h1>Przemysław Pałyga<br/>
-                    <span class="about__position-item">Junior Front-End Developer</span><br/>
-                    <span class="about__in-training-item">in training</span></h1>
+                    <span class="info-box__position-item">Junior Front-End Developer</span><br/>
+                    <span class="info-box__in-training-item">in training</span></h1>
             </div>
         </header>
+
         <div class="hello">
-            <div class="hello__container">
+            <div class="container container--hello">
+
                 <div class="bullets">
                     <span class="bullets__label">about me</span>
                     <div class="bullets__item bullets__item--selected"></div>
                     <div class="bullets__item"></div>
                     <div class="bullets__item"></div>
                 </div>
-                <p class="hello__paragraph">I'm a self-taught who wants to put his knowledge into professional practice. The power of simplicity is something
-                    I believe in and I always do my best to write code that is clean, properly structured and light.</p>
-                <img class="hello__profile-photo" src="assets/imgs/profile-photo.jpg" alt="A profile photo of Przemysław Pałyga, Junior Front-End Developer">
-                <div class="hello__section-header-container">
-                    <span class="hello__section-header">hello</span>
-                    <div class="hello__section-line"></div>
-                </div>
 
+                <p class="paragraph">I'm a self-taught who wants to put his knowledge into professional practice. The power of simplicity is something
+                    I believe in and I always do my best to write code that is clean, properly structured and light.</p>
+
+                <img class="hello__profile-photo" src="assets/imgs/profile-photo.jpg" alt="A profile photo of Przemysław Pałyga, Junior Front-End Developer">
+            </div>
+
+            <div class="section-header-container section-header-container--hello">
+                <span class="hello__section-header">hello</span>
+                <div class="hello__section-line"></div>
             </div>
         </div>
+
     </section>
 
 
