@@ -16,7 +16,14 @@
 <body>
     <nav class="menu">
         <div class="menu menu--visible">
-
+            <img class="menu--visible__logo" src="assets/imgs/logo-mobile.png" alt="Przemysław Pałyga - Front-End Developer Logo">
+            <div class="menu--visible__carousel">
+                <ul class="menu--visible__list">
+                    <li class="menu--visible__list-item">skills<span class="menu--visible__line"></span></li>
+                    <li class="menu--visible__list-item">about</li>
+                    <li class="menu--visible__list-item">contact</li>
+                </ul>
+            </div>
         </div>
         <div class="menu menu--hidden">
             <div class="menu--hidden__holder"></div>
@@ -28,11 +35,11 @@
     </nav>
 
     <section class="about">
-        <header class="container container--info-box">
-            <div class="info-box">
+        <header class="container">
+            <div class="about__box">
                 <h1>Przemysław Pałyga<br/>
-                    <span class="info-box__position-item">Junior Front-End Developer</span><br/>
-                    <span class="info-box__in-training-item">in training</span></h1>
+                    <span class="about__position-item">Junior Front-End Developer</span><br/>
+                    <span class="about__in-training-item">in training</span></h1>
             </div>
         </header>
 
@@ -51,15 +58,17 @@
 
                 <img class="about__profile-photo" src="assets/imgs/profile-photo.jpg" alt="A profile photo of Przemysław Pałyga, Junior Front-End Developer">
 
-                <div class="section-header-container section-header-container--hello">
-                    <span class="section-header">hello</span>
-                    <div class="section-line"></div>
+                <div class="section-header__container section-header__container--hello">
+                    <span class="section-header__text">hello</span>
+                    <div class="section-header__line"></div>
                 </div>
             </div>
         </div>
 
     </section>
 
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/jquery.flipster.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 

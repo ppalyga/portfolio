@@ -1,4 +1,5 @@
 @import url("reset.css");
+@import url("jquery.flipster.min.css");
 
 // COLORS
 $lightgrey: #a9aaa9;
@@ -29,17 +30,13 @@ body {
     max-width: 26.6rem;
     margin: 0 auto;
 
-    &--info-box {
-    margin: 5.2rem auto;
-    }
-
     &--hello {
     padding: 4rem $marginmobile;
     position: relative;
     }
 }
 
-.section-header-container {  
+.section-header__container {  
     position: absolute;
 
     &--hello {
@@ -94,14 +91,14 @@ body {
                translate(2.4rem, -2.1rem);
 }
 
-.section-header {
+.section-header__text {
     font-family: $domine;
     color: $white;
     font-size: 5.2rem;
     letter-spacing: -0.4rem;
 }
 
-.section-line {
+.section-header__line {
     height: 0.2rem;
     width: 12.4rem;
     background: $accent;
@@ -118,6 +115,12 @@ body {
     &__btn {
         margin-top: 1.9rem;
         flex: 0 1 5.3rem;
+        z-index: 99;
+        transition: all 0.5s;
+
+        &:hover {
+            letter-spacing: 0.5rem;
+        }
     }   
 
     &__line {
@@ -129,34 +132,66 @@ body {
 }
 
 .menu--visible {
-    display: none;
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to bottom, rgba(33, 37, 33, .97) 0%,rgba(0, 0, 0, .97) 100%);
+    background: linear-gradient(to bottom, rgba(33, 37, 33, .95) 0%,rgba(0, 0, 0, .95) 100%);
     z-index: 100;
-    transition: all 0.5s;
-    opacity: 0; 
+    display: none;
+    text-align: center;
+
+    &__logo {
+        margin-top: 1.7rem;
+    }
+
+    &__list-item {
+        font-size: 5.2rem;
+        font-family: $domine;
+        color: $white;
+    }
+
+    &__carousel {
+        position: relative;
+        top: 2.4rem;
+        height: 100vh;
+        transform: translateX(-0.8rem);
+
+    }
 }
 
+.flipster__item {
+    &--current {
+        padding-right: 0.5rem;
+        border-right: 2px solid $accent;
+    }
+
+    // &--past, &--future {
+    //     font-size: 1.2rem;
+    //     position: absolute;
+    //     top: 1rem;
+    // }
+}
+
+
 //ABOUT
-.info-box {
+.about__box {
 border: 1px solid $accent;
 font-family: $open;
 font-size: 2rem;
 font-weight: 300;
 color: $white;
 padding: 2.2rem 1.2rem 3.2rem 1.2rem;
+margin: 5.2rem auto;
 position: relative;
 }
 
-.info-box__position-item {
+.about__position-item {
     letter-spacing: -0.13rem;
     color: $accent;
     font-weight: bold;   
 }
 
-.info-box__in-training-item {
+.about__in-training-item {
     font-family: $domine;
     font-size: 1.2rem;
     position: absolute;
