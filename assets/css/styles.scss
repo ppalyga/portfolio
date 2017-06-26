@@ -142,12 +142,14 @@ body {
 
     &__logo {
         margin-top: 1.7rem;
+        width: 2.9rem;
     }
 
     &__list-item {
         font-size: 5.2rem;
         font-family: $domine;
         color: $white;
+        user-select: none;
     }
 
     &__carousel {
@@ -164,12 +166,6 @@ body {
         padding-right: 0.5rem;
         border-right: 2px solid $accent;
     }
-
-    // &--past, &--future {
-    //     font-size: 1.2rem;
-    //     position: absolute;
-    //     top: 1rem;
-    // }
 }
 
 

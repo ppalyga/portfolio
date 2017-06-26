@@ -1,9 +1,14 @@
 $(document).ready(function () {
 
     let menuBtn = $('.menu--hidden__btn'),
-        menu = $('.menu--visible');
+        menu = $('.menu--visible'),
+        menuItems = $('.menu--visible__list-item');
 
     menuBtn.on('click', function () {
+        menu.fadeToggle();
+    });
+
+    menuItems.on('click', function() {
         menu.fadeToggle();
     });
 
