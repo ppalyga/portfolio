@@ -145,11 +145,14 @@ body {
         width: 2.9rem;
     }
 
+    &__list{
+        height: 100vh !important;
+    }
+
     &__list-item {
         font-size: 5.2rem;
         font-family: $domine;
         color: $white;
-        user-select: none;
     }
 
     &__carousel {
@@ -157,7 +160,6 @@ body {
         top: 2.4rem;
         height: 100vh;
         transform: translateX(-0.8rem);
-
     }
 }
 
