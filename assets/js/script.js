@@ -25,8 +25,12 @@ $(document).ready(function () {
     });
 
     let hammertime = new Hammer(menu);
-    hammertime.on('swipeleft', function(ev) {
+    
+    hammertime.on('swipeleft', function() {
         carousel.flipster('prev');
+    });
+    hammertime.on('swiperight', function() {
+        carousel.flipster('next');
     });
 });
 
