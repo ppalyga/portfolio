@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     let menuBtn = $('.menu--hidden__btn'),
         menuJQ = $('.menu--visible'),
-        menu = document.querySelector('.menu--visible'),
+        menu = document.querySelector('.menu--visible__carousel'),
         menuItems = $('.menu--visible__list-item');
 
     menuBtn.on('click', function () {
@@ -25,7 +25,7 @@ $(document).ready(function () {
     });
 
     let hammertime = new Hammer(menu);
-    
+
     hammertime.on('swipeleft', function() {
         carousel.flipster('prev');
     });

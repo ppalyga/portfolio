@@ -109,8 +109,6 @@ body {
   .menu--visible__logo {
     margin-top: 1.7rem;
     width: 2.9rem; }
-  .menu--visible__list {
-    height: 100vh !important; }
   .menu--visible__list-item {
     font-size: 5.2rem;
     font-family: Domine, serif;
