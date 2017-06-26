@@ -1,27 +1,32 @@
 $(document).ready(function () {
 
     let menuBtn = $('.menu--hidden__btn'),
-        menu = $('.menu--visible'),
+        menuJQ = $('.menu--visible'),
+        menu = document.querySelector('.menu--visible'),
         menuItems = $('.menu--visible__list-item');
 
     menuBtn.on('click', function () {
-        menu.fadeToggle();
+        menuJQ.fadeToggle();
     });
 
-    menuItems.on('click', function() {
-        menu.fadeToggle();
+    menuItems.on('click', function () {
+        menuJQ.fadeToggle();
     });
 
-    $(".menu--visible__carousel").flipster({
+    let carousel = $(".menu--visible__carousel").flipster({
         style: 'flat',
         spacing: 0,
         loop: true,
         click: true,
         keyboard: true,
         scrollwheel: true,
-        touch: true,
+        touch: false,
         fadeIn: 100
     });
 
+    let hammertime = new Hammer(menu);
+    hammertime.on('swipeleft', function(ev) {
+        carousel.flipster('prev');
+    });
 });
 

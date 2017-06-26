@@ -114,7 +114,12 @@ body {
   .menu--visible__list-item {
     font-size: 5.2rem;
     font-family: Domine, serif;
-    color: #fff; }
+    color: #fff;
+    cursor: default;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
   .menu--visible__carousel {
     position: relative;
     top: 2.4rem;
