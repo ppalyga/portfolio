@@ -109,39 +109,30 @@ body {
 }
 
 //MENU
-noscript {
-    display: flex;
-    justify-content: center;
-}
-
 .menu--no-js {
     height: 4.8rem;
+    width: 100%;
     background: $darkgrey;
-    flex: 1 1 100vh;
 
     &__list {
-        height: 100%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+        padding-top: 1.1rem;
     }
 
     &__list-item {
         font-family: $domine;
         font-size: 1.2rem;
         color: $white;
-        display: inline;
+        display: inline-block;
         margin-left: 3.6rem;
+        float: right;
+        position: relative;
+        top: 0.7rem;
 
         &:hover {
             padding-right: 0.5rem;
             border-right: 1px solid $accent;
             letter-spacing: 0.05rem;
         }
-    }
-
-    &__logo {
-        margin-right: auto;
     }
 }
 
