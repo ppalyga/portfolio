@@ -1,4 +1,5 @@
 @import url("reset.css");
+
 @import url("jquery.flipster.min.css");
 
 // COLORS
@@ -31,18 +32,32 @@ body {
     margin: 0 auto;
 
     &--hello {
-    padding: 4rem $marginmobile;
-    position: relative;
+        padding: 4rem $marginmobile;
+        position: relative;
+    }
+
+    &--experience {
+        position: relative;
+    }
+
+    &--skills{
+        margin-top: 13.5rem;
     }
 }
 
-.section-header__container {  
+.section-header__container {
     position: absolute;
 
     &--hello {
-        right: 0rem;
+        right: 0;
         bottom: 6rem;
-    }  
+    }
+
+    &--skills {
+        text-align: right;
+        top: -9rem;
+        left: 0;
+    }
 }
 
 .bullets {
@@ -52,6 +67,16 @@ body {
 }
 
 //GENERAL STYLES
+a {
+    text-decoration: none;
+}
+
+.link {
+    font-family: $open;
+    color: $accent;
+    font-weight: bold;
+}
+
 .paragraph {
     font-family: $domine;
     color: $lightgrey;
@@ -60,9 +85,23 @@ body {
     letter-spacing: -0.06rem;
 }
 
+.paragraph--quote {
+    text-align: center;
+    font-size: 2rem;
+    color: $accent;
+    letter-spacing: -0.15rem;
+
+    &__emphasis {
+        font-family: $open;
+        font-weight: bold;
+        letter-spacing: -0.1rem;
+        color: $white;
+    }
+}
+
 .text-btn {
     border: none;
-    background: none;  
+    background: none;
     font-family: $open;
     font-size: 1.2rem;
     font-weight: bold;
@@ -74,42 +113,48 @@ body {
     width: 2.9rem;
 }
 
-.bullets__item {
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    border: 1px solid $accent;
-    margin: 0.8rem 0;
+.bullets {
+    &__item {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        border: 1px solid $accent;
+        margin: 0.8rem 0;
 
-    &--selected {
-    background: $accent;
+        &--selected {
+            background: $accent;
+        }
+    }
+
+    &__label {
+        font-size: 1.2rem;
+        font-family: $domine;
+        color: $white;
+        display: block;
+        transform: rotate(-90deg) translate(2.4rem, -2.1rem);
     }
 }
 
-.bullets__label {
-    font-size: 1.2rem;
-    font-family: $domine;
-    color: $white;
-    display: block;
-    transform: rotate(-90deg)
-               translate(2.4rem, -2.1rem);
-}
+.section-header {
+    &__text {
+        font-family: $domine;
+        color: $white;
+        font-size: 5.2rem;
+        letter-spacing: -0.4rem;
+    }
 
-.section-header__text {
-    font-family: $domine;
-    color: $white;
-    font-size: 5.2rem;
-    letter-spacing: -0.4rem;
-}
-
-.section-header__line {
-    height: 0.2rem;
-    width: 12.4rem;
-    background: $accent;
+    &__line {
+        height: 0.2rem;
+        width: 12.4rem;
+        background: $accent;
+    }
 }
 
 //MENU
 .menu--no-js {
+    position: fixed;
+    top:0;
+    z-index: 110;
     height: 4.8rem;
     width: 100%;
     background: $darkgrey;
@@ -134,6 +179,11 @@ body {
             letter-spacing: 0.05rem;
         }
     }
+
+    &__holder {
+        width:100%;
+        height: 4.8rem;
+    }
 }
 
 .menu--hidden {
@@ -152,7 +202,7 @@ body {
         &:hover {
             letter-spacing: 0.5rem;
         }
-    }   
+    }
 
     &__line {
         height: 0.1rem;
@@ -166,7 +216,7 @@ body {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to bottom, rgba(33, 37, 33, .95) 0%,rgba(0, 0, 0, .95) 100%);
+    background: linear-gradient(to bottom, rgba(33, 37, 33, 0.95) 0%, rgba(0, 0, 0, 0.95) 100%);
     z-index: 100;
     display: none;
     text-align: center;
@@ -198,41 +248,57 @@ body {
     }
 }
 
-
 //ABOUT
-.about__box {
-border: 1px solid $accent;
-font-family: $open;
-font-size: 2rem;
-font-weight: 300;
-color: $white;
-padding: 2.2rem 1.2rem 3.2rem 1.2rem;
-margin: 5.2rem auto;
-position: relative;
+.about {
+    &__box {
+        border: 1px solid $accent;
+        font-family: $open;
+        font-size: 2rem;
+        font-weight: 300;
+        color: $white;
+        padding: 2.2rem 1.2rem 3.2rem 1.2rem;
+        margin: 5.2rem auto;
+        position: relative;
+    }
+
+    &__position-item {
+        letter-spacing: -0.13rem;
+        color: $accent;
+        font-weight: bold;
+    }
+
+    &__in-training-item {
+        font-family: $domine;
+        font-size: 1.2rem;
+        position: absolute;
+        left: 18.8rem;
+    }
+
+    &__hello {
+        background: $mediumgrey;
+        position: relative;
+    }
+
+    &__profile-photo {
+        margin-top: 1.5rem;
+        margin-left: 3.3rem;
+    }
+
+    &__paragraph {
+        &--experience {
+            margin-top: 5rem;
+            text-align: right;
+        }
+    }
+
+    &__quote {
+        margin-top: 6.6rem;
+    }
 }
 
-.about__position-item {
-    letter-spacing: -0.13rem;
-    color: $accent;
-    font-weight: bold;   
-}
 
-.about__in-training-item {
-    font-family: $domine;
-    font-size: 1.2rem;
-    position: absolute;
-    left: 18.8rem; 
-}
-
-.about__hello {
-    background: $mediumgrey;
+//SKILLS
+.skills {
     position: relative;
+    margin-top: 4.7rem;
 }
-
-.about__profile-photo {
-    margin-top: 1.5rem;
-    margin-left: 3.3rem;
-}
-
-
-
