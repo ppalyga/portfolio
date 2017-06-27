@@ -109,13 +109,12 @@ body {
 }
 
 //MENU
-.menu {
+noscript {
     display: flex;
     justify-content: center;
 }
 
 .menu--no-js {
-    display: block;
     height: 4.8rem;
     background: $darkgrey;
     flex: 1 1 100vh;
