@@ -1,0 +1,10 @@
+        <script>
+            console.log('JavaScript enabled');
+            var div = document.createElement('div');
+            div.style.width = '100px';
+            div.style.height = '100px';
+            div.style.background = 'red';
+            div.style.margin = '0 auto';
+            var nav = document.querySelector('nav');
+            nav.appendChild(div);
+        </script>

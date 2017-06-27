@@ -3,13 +3,11 @@ $(document).ready(function () {
     // MENU
     // variables
     let menuBtnJQ = $('.menu--hidden__btn'),
-        menuHiddenJQ = $('.menu--hidden'),
         menuJQ = $('.menu--visible'),
         menu = document.querySelector('.menu--visible__carousel'),
         menuList = document.querySelector('menu--visible__list'),
         menuItems = $('.menu--visible__list-item');
 
-    menuHiddenJQ.css('display', 'flex');
     // click events
     menuBtnJQ.on('click', function () {
         menuJQ.fadeToggle();
