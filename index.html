@@ -15,12 +15,22 @@
 
 <body>
     <nav class="menu">
-        <div class="menu menu--visible">
-            <img class="menu--visible__logo" src="assets/imgs/logo.svg" alt="Przemysław Pałyga - Front-End Developer Logo">
+        <noscript class="menu--no-js">
+            <ul class="menu--no-js__list container">
+                <img class="logo--small menu--no-js__logo" src="assets/imgs/logo.svg" alt="Przemysław Pałyga - Front-End Developer Logo">
+                <li class="menu--no-js__list-item">about</li>
+                <li class="menu--no-js__list-item">skills</li>
+                <li class="menu--no-js__list-item">contact</li>
+            </ul>
+        </noscript>
+        <div class="menu--visible">
+            <img class="logo--small menu--visible__logo" src="assets/imgs/logo.svg" alt="Przemysław Pałyga - Front-End Developer Logo">
             <div class="menu--visible__carousel">
                 <ul class="menu--visible__list">
                     <li class="menu--visible__list-item">skills</li>
-                    <a href="#about"><li class="menu--visible__list-item">about</li></a>
+                    <a href="#about">
+                        <li class="menu--visible__list-item">about</li>
+                    </a>
                     <li class="menu--visible__list-item">contact</li>
                 </ul>
             </div>

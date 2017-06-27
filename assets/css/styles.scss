@@ -70,6 +70,10 @@ body {
     outline: none;
 }
 
+.logo--small {
+    width: 2.9rem;
+}
+
 .bullets__item {
     width: 1rem;
     height: 1rem;
@@ -105,8 +109,45 @@ body {
 }
 
 //MENU
-.menu--hidden {
+.menu {
     display: flex;
+    justify-content: center;
+}
+
+.menu--no-js {
+    display: block;
+    height: 4.8rem;
+    background: $darkgrey;
+    flex: 1 1 100vh;
+
+    &__list {
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    &__list-item {
+        font-family: $domine;
+        font-size: 1.2rem;
+        color: $white;
+        display: inline;
+        margin-left: 3.6rem;
+
+        &:hover {
+            padding-right: 0.5rem;
+            border-right: 1px solid $accent;
+            letter-spacing: 0.05rem;
+        }
+    }
+
+    &__logo {
+        margin-right: auto;
+    }
+}
+
+.menu--hidden {
+    display: none;
 
     &__holder {
         flex: 1 1 30%;
@@ -142,7 +183,6 @@ body {
 
     &__logo {
         margin-top: 1.7rem;
-        width: 2.9rem;
     }
 
     &__list-item {
