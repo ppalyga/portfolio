@@ -1,18 +1,21 @@
 $(document).ready(function () {
 
-    let menuBtn = $('.menu--hidden__btn'),
+// MENU
+// variables
+    let menuBtnJQ = $('.menu--hidden__btn'),
         menuJQ = $('.menu--visible'),
         menu = document.querySelector('.menu--visible__carousel'),
+        menuList = document.querySelector('menu--visible__list'),
         menuItems = $('.menu--visible__list-item');
-
-    menuBtn.on('click', function () {
+// click events
+    menuBtnJQ.on('click', function () {
         menuJQ.fadeToggle();
     });
 
     menuItems.on('click', function () {
         menuJQ.fadeToggle();
     });
-
+// carousel
     let carousel = $(".menu--visible__carousel").flipster({
         style: 'flat',
         spacing: 0,
@@ -20,16 +23,16 @@ $(document).ready(function () {
         click: true,
         keyboard: true,
         scrollwheel: true,
-        touch: false,
+        touch: true,
         fadeIn: 100
     });
+// touch support
+    let menuSlide = new Hammer(menu);    
 
-    let hammertime = new Hammer(menu);
-
-    hammertime.on('swipeleft', function() {
+    menuSlide.on('swipeleft', function() {
         carousel.flipster('prev');
     });
-    hammertime.on('swiperight', function() {
+    menuSlide.on('swiperight', function() {
         carousel.flipster('next');
     });
 });
