@@ -1,5 +1,7 @@
 @import url("reset.css");
 @import url("jquery.flipster.min.css");
+@import url("slick.css");
+@import url("slick-theme.css");
 html {
   font-size: 62.5%;
 }
@@ -266,8 +268,6 @@ a {
   padding: 2.5rem 3rem;
   background: rgba(24, 24, 17, 0.7);
   border-radius: 2%;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 .skills__card--active {
   display: block;

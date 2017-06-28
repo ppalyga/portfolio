@@ -1,6 +1,7 @@
 @import url("reset.css");
-
 @import url("jquery.flipster.min.css");
+@import url("slick.css");
+@import url("slick-theme.css");
 
 // COLORS
 $lightgrey: #a9aaa9;
@@ -309,8 +310,7 @@ a {
         padding: 2.5rem 3rem;
         background: rgba(24, 24, 17, 0.7);
         border-radius: 2%;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-
+       
         &--active {
             display: block;
         }
