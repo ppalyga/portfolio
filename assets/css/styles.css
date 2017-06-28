@@ -2,8 +2,6 @@
 @import url("jquery.flipster.min.css");
 html {
   font-size: 62.5%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 body {
@@ -23,6 +21,7 @@ body {
   position: relative;
 }
 .container--skills {
+  position: relative;
   margin-top: 13.5rem;
 }
 
@@ -36,7 +35,7 @@ body {
 .section-header__container--skills {
   text-align: right;
   top: -9rem;
-  left: 0;
+  left: -2.7rem;
 }
 
 .bullets {
@@ -49,7 +48,7 @@ a {
   text-decoration: none;
 }
 
-.link {
+.link, .emphasis {
   font-family: "Open Sans", sans-serif;
   color: #bea77f;
   font-weight: bold;
@@ -63,13 +62,16 @@ a {
   letter-spacing: -0.06rem;
 }
 
-.paragraph--quote {
+.quote {
   text-align: center;
   font-size: 2rem;
   color: #bea77f;
   letter-spacing: -0.15rem;
 }
-.paragraph--quote__emphasis {
+.quote--about {
+  margin-top: 6.6rem;
+}
+.quote__emphasis {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   letter-spacing: -0.1rem;
@@ -250,13 +252,44 @@ a {
   margin-top: 5rem;
   text-align: right;
 }
-.about__quote {
-  margin-top: 6.6rem;
-}
 
 .skills {
   position: relative;
   margin-top: 4.7rem;
+}
+.skills__card {
+  display: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 18.8rem;
+  margin-top: 5rem;
+  padding: 2.5rem 3rem;
+  background: rgba(24, 24, 17, 0.7);
+  border-radius: 2%;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.skills__card--active {
+  display: block;
+}
+.skills__skill-name {
+  display: inline;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bold;
+}
+.skills__description-container {
+  float: right;
+  width: 13rem;
+}
+.skills__description-text {
+  line-height: 1;
+}
+.skills__description-other-technologies {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=styles.css.map */

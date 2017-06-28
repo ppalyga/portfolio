@@ -16,19 +16,19 @@
 <body>
     <nav class="menu">
         <noscript>
-            <div class="menu--no-js">
+            <div class="menu menu--no-js">
                 <ul class="menu--no-js__list container">
-                    <img class="logo--small menu--no-js__logo" src="assets/imgs/logo.svg" alt="Przemysław Pałyga - Front-End Developer Logo">
+                    <img class="menu--no-js__logo logo logo--small" src="assets/imgs/logo.svg" alt="Przemysław Pałyga - Front-End Developer Logo">
                     <li class="menu--no-js__list-item">about</li>
                     <li class="menu--no-js__list-item">skills</li>
                     <li class="menu--no-js__list-item">contact</li>
                 </ul>
             </div>
-
-            <div class="menu--no-js__holder"></div>
+            <div class="menu menu--no-js__holder"></div>
         </noscript>
-        <div class="menu--visible">
-            <img class="logo--small menu--visible__logo" src="assets/imgs/logo.svg" alt="Przemysław Pałyga - Front-End Developer Logo">
+
+        <div class="menu menu--visible">
+            <img class="menu--visible__logo logo logo--small" src="assets/imgs/logo.svg" alt="Przemysław Pałyga - Front-End Developer Logo">
             <div class="menu--visible__carousel">
                 <ul class="menu--visible__list">
                     <li class="menu--visible__list-item">skills</li>
@@ -39,6 +39,7 @@
                 </ul>
             </div>
         </div>
+
         <div class="menu menu--hidden">
             <div class="menu--hidden__holder"></div>
             <button class="text-btn menu--hidden__btn">MENU</button>
@@ -71,7 +72,7 @@
                 <img class="about__profile-photo" src="assets/imgs/profile-photo.jpg" alt="A profile photo of Przemysław Pałyga, Junior Front-End Developer">
 
                 <div class="section-header__container section-header__container--hello">
-                    <span class="section-header__text">hello</span>
+                    <h2 class="section-header__text">hello</h2>
                     <div class="section-header__line"></div>
                 </div>
             </div>
@@ -82,20 +83,81 @@
                 subjects I was lucky to explore during the studies. Working at one of the best SEO agencies in Poland gave
                 me a solid experience in the area of website optimization for search engines.</p>
 
-            <p class="paragraph paragraph--quote about__quote">I am certain that I could use this set of <span class="paragraph--quote__emphasis">knowledge and skills</span>to
-                help you create even more amazing stuff.</p>
+            <p class="quote quote--about">I am certain that I could use this set of <span class="quote__emphasis">knowledge and skills</span> to help you
+                create even more amazing stuff.</p>
         </div>
     </section>
 
     <section class="skills" id="skills">
-        <div class="section-header__container section-header__container--skills">
-            <span class="section-header__text">skills</span>
-            <div class="section-header__line"></div>
-        </div>
-
         <div class="container container--skills">
+            <div class="section-header__container section-header__container--skills">
+                <h2 class="section-header__text">skills</h2>
+                <div class="section-header__line"></div>
+            </div>
+
             <p class="paragraph skills__paragraph">I’ve been learning Front-End technologies for over a half of year now. I took part in many courses and bootcamps
-                related to Web Design, UX Design and JavaScript. You can see <a class="link" href="#">my ceriticates here</a>.</p>
+                related to Web Design, UX Design and JavaScript. You can see <a class="link" href="#">my ceriticates here</a>.
+            </p>
+
+            <div class="skills__carousel">
+                <div class="skills__list">
+                    <div class="skills__card skills__card--active">
+                        <h3 class="skills__skill-name">html5</h3>
+                        <div class="skills__description-container">
+                            <p class="paragraph skills__description-text">
+                                As easy as it is to learn, HTML helped me belive that I can code. To take full advantage of the markup, I always have
+                                <em class="emphasis">sementics</em> in mind.<br/><br/>I also use<br/><span class="skills__description-other-technologies">emmet bootstrap vscode</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="skills__card">
+                        <h3 class="skills__skill-name">css3</h3>
+                        <div class="skills__description-container">
+                            <p class="paragraph skills__description-text">
+                                The power of CSS constantly suprises me. I really love how it’s getting more and more advanced when it comes to
+                                <em class="emphasis">creating responsive layouts</em>.<br/><br/>I also use<br/><span class="skills__description-other-technologies">rwd sass css&amp;flexboxgrid</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="skills__card">
+                        <h3 class="skills__skill-name">js</h3>
+                        <div class="skills__description-container">
+                            <p class="paragraph skills__description-text">
+                                Learining this language was the first serious challange I came across. At the same time, I know it is something I enjoy learning
+                                and I <em class="emphasis">expand my knowledge</em> in this
+                                field every day.
+                                <br/><br/>I also use<br/><span class="skills__description-other-technologies">jquery es6 react</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="skills__card">
+                        <h3 class="skills__skill-name">nodeJS</h3>
+                        <div class="skills__description-container">
+                            <p class="paragraph skills__description-text">
+                                While my focus is on the Front-End, I also had a chance to build a few simple apps in NodeJS. I learnt
+                                <em class="emphasis">a bit about</em> RESTful routing, authentication and authorization.<br/><br/>I
+                                am also still learning<br/>
+                                <span class="skills__description-other-technologies">express mongodb</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="skills__card">
+                        <h3 class="skills__skill-name">git</h3>
+                        <div class="skills__description-container">
+                            <p class="paragraph skills__description-text">
+                                When I first learnt the basics of this version control system, I immediatly thought it is
+                                <em class="emphasis">extremely helpful</em>. Now I use GIT for most of my projects.<br/><br/>I
+                                am also still learning<br/>
+                                <span class="skills__description-other-technologies">webpack</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 

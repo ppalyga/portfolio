@@ -19,7 +19,6 @@ $marginmobile: 2.8rem;
 
 html {
     font-size: 62.5%;
-    box-sizing: border-box;
 }
 
 body {
@@ -40,7 +39,8 @@ body {
         position: relative;
     }
 
-    &--skills{
+    &--skills {
+        position: relative;
         margin-top: 13.5rem;
     }
 }
@@ -56,7 +56,7 @@ body {
     &--skills {
         text-align: right;
         top: -9rem;
-        left: 0;
+        left: -2.7rem;
     }
 }
 
@@ -71,7 +71,7 @@ a {
     text-decoration: none;
 }
 
-.link {
+.link, .emphasis {
     font-family: $open;
     color: $accent;
     font-weight: bold;
@@ -85,11 +85,15 @@ a {
     letter-spacing: -0.06rem;
 }
 
-.paragraph--quote {
+.quote {
     text-align: center;
     font-size: 2rem;
     color: $accent;
     letter-spacing: -0.15rem;
+
+    &--about {
+        margin-top: 6.6rem;
+    }
 
     &__emphasis {
         font-family: $open;
@@ -153,7 +157,7 @@ a {
 //MENU
 .menu--no-js {
     position: fixed;
-    top:0;
+    top: 0;
     z-index: 110;
     height: 4.8rem;
     width: 100%;
@@ -181,7 +185,7 @@ a {
     }
 
     &__holder {
-        width:100%;
+        width: 100%;
         height: 4.8rem;
     }
 }
@@ -290,15 +294,48 @@ a {
             text-align: right;
         }
     }
-
-    &__quote {
-        margin-top: 6.6rem;
-    }
 }
-
 
 //SKILLS
 .skills {
     position: relative;
     margin-top: 4.7rem;
+
+    &__card {
+        display: none;
+        box-sizing: border-box;
+        height: 18.8rem;
+        margin-top: 5rem;
+        padding: 2.5rem 3rem;
+        background: rgba(24, 24, 17, 0.7);
+        border-radius: 2%;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+        &--active {
+            display: block;
+        }
+    }
+
+    &__skill-name {
+        display: inline;
+        font-family: $open;
+        font-size: 2rem;
+        color: $white;
+        font-weight: bold;
+    }
+
+    &__description-container {
+        float: right;
+        width: 13rem;
+    }
+
+    &__description-text {
+        line-height: 1;
+    }
+
+    &__description-other-technologies {
+        font-family: $open;
+        color: $white;
+        font-weight: bold;
+    }
 }
