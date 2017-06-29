@@ -1,7 +1,10 @@
 @import url("reset.css");
+
 @import url("jquery.flipster.min.css");
-@import url("slick.css");
-@import url("slick-theme.css");
+
+@import url("slick.min.css");
+
+@import url("slick-theme.min.css");
 
 // COLORS
 $lightgrey: #a9aaa9;
@@ -9,6 +12,7 @@ $mediumgrey: #212521;
 $darkgrey: #18180f;
 $accent: #bea77f;
 $white: #fff;
+$shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 
 // FONTS
 $domine: Domine, serif;
@@ -44,6 +48,12 @@ body {
         position: relative;
         margin-top: 13.5rem;
     }
+
+    &--contact {
+        position: relative;
+        margin-top: 5rem;
+        text-align: center;
+    }
 }
 
 .section-header__container {
@@ -59,17 +69,20 @@ body {
         top: -9rem;
         left: -2.7rem;
     }
-}
 
-.bullets {
-    position: absolute;
-    bottom: 6rem;
-    left: $marginmobile;
+    &--contact {
+        top: -9rem;
+        right: -2.4rem;
+    }
 }
 
 //GENERAL STYLES
 a {
     text-decoration: none;
+}
+
+input, textarea {
+    outline: none;
 }
 
 .link, .emphasis {
@@ -91,9 +104,18 @@ a {
     font-size: 2rem;
     color: $accent;
     letter-spacing: -0.15rem;
+    font-family: $domine;
 
     &--about {
         margin-top: 6.6rem;
+    }
+
+    &--project {
+        margin-top: 6rem;
+    }
+
+    &--visit {
+        margin: 2rem 0;
     }
 
     &__emphasis {
@@ -114,29 +136,18 @@ a {
     outline: none;
 }
 
-.logo--small {
-    width: 2.9rem;
-}
-
-.bullets {
-    &__item {
-        width: 1rem;
-        height: 1rem;
-        border-radius: 50%;
-        border: 1px solid $accent;
-        margin: 0.8rem 0;
-
-        &--selected {
-            background: $accent;
-        }
+.logo {
+    &--small {
+        width: 2.9rem;
     }
 
-    &__label {
-        font-size: 1.2rem;
-        font-family: $domine;
-        color: $white;
-        display: block;
-        transform: rotate(-90deg) translate(2.4rem, -2.1rem);
+    &--freecodecamp {
+        width: 10.6rem;
+        margin: 0.8rem 2.8rem 0 2.8rem;
+    }
+
+    &--codepen {
+        width: 7.4rem;
     }
 }
 
@@ -152,6 +163,10 @@ a {
         height: 0.2rem;
         width: 12.4rem;
         background: $accent;
+
+        &--contact {
+            width: 26.4rem;
+        }
     }
 }
 
@@ -286,7 +301,7 @@ a {
 
     &__profile-photo {
         margin-top: 1.5rem;
-        margin-left: 3.3rem;
+        margin-left: 1rem;
     }
 
     &__paragraph {
@@ -310,7 +325,7 @@ a {
         padding: 2.5rem 3rem;
         background: rgba(24, 24, 17, 0.7);
         border-radius: 2%;
-       
+
         &--active {
             display: block;
         }
@@ -337,5 +352,97 @@ a {
         font-family: $open;
         color: $white;
         font-weight: bold;
+    }
+
+    &__project {
+        color: $white;
+        padding: 1.2rem 2.5rem;
+        border: 2px solid $accent;
+        border-radius: 2%;
+        background: rgba(33, 37, 33, 0.7) url(../imgs/arrow.png) no-repeat 87% 77%;
+        background-size: 1.5rem;
+        margin-top: 1rem;
+        transition: all 0.5s;
+        box-shadow: $shadow;
+
+        &:hover {
+            background-position: 90% 77%;
+            box-shadow: none;
+        }
+    }
+
+    &__project-name {
+        font-family: $open;
+        font-weight: bold;
+    }
+}
+
+//CONTACT
+.contact {
+    position: relative;
+
+    &__paragraph {
+        margin: 14.5rem 0 4rem 0;
+    }
+
+    &__box {
+        background: $mediumgrey;
+    }
+
+    &__btn {
+        transition: all 0.5s;
+
+        &:hover {
+            letter-spacing: 0.2rem;
+        }
+    }
+
+    &__line {
+        width: 0.2rem;
+        height: 3rem;
+        background: $accent;
+        margin: 1.5rem auto 0 auto;
+    }
+
+    .form {
+        &--contact {
+            text-align: center;
+            padding: 4.4rem 0;
+        }
+
+        &__input {
+            border: none;
+            border-bottom: 1px solid $accent;
+            background: $mediumgrey;
+            font-size: 2rem;
+            font-family: $open;
+            margin-bottom: 2.5rem;
+            color: $lightgrey;
+
+            &--textarea {
+                border: 1px solid $accent;
+                max-width: 23.6rem;
+                height: 13.8rem;
+            }
+        }
+
+        &__btn {
+            display: block;
+            margin: 0 auto;
+            width: 24.4rem;
+            background: $accent;
+            border: none;
+            height: 4rem;
+            color: $white;
+            font-family: $open;
+            font-weight: bold;
+            font-size: 1.2rem;
+            box-shadow: $shadow;
+            transition: box-shadow 0.5s;
+
+            &:hover {
+                box-shadow: none;
+            }
+        }
     }
 }

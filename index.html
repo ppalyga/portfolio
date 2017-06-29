@@ -10,18 +10,27 @@
     />
     <meta name="theme-color" content="#212521">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/styles-nojs.css">
+    </noscript>
     <link href="https://fonts.googleapis.com/css?family=Domine|Open+Sans:300,700&amp;subset=latin-ext" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="menu">
+    <nav class="menu" id="menu">
         <noscript>
             <div class="menu menu--no-js">
                 <ul class="menu--no-js__list container">
                     <img class="menu--no-js__logo logo logo--small" src="assets/imgs/logo.svg" alt="Przemysław Pałyga - Front-End Developer Logo">
-                    <li class="menu--no-js__list-item">about</li>
-                    <li class="menu--no-js__list-item">skills</li>
-                    <li class="menu--no-js__list-item">contact</li>
+                    <a href="#about">
+                        <li class="menu--no-js__list-item">about</li>
+                    </a>
+                    <a href="#skills">
+                        <li class="menu--no-js__list-item">skills</li>
+                    </a>
+                    <a href="#contact">
+                        <li class="menu--no-js__list-item">contact</li>
+                    </a>
                 </ul>
             </div>
             <div class="menu menu--no-js__holder"></div>
@@ -31,11 +40,15 @@
             <img class="menu--visible__logo logo logo--small" src="assets/imgs/logo.svg" alt="Przemysław Pałyga - Front-End Developer Logo">
             <div class="menu--visible__carousel">
                 <ul class="menu--visible__list">
-                    <li class="menu--visible__list-item">skills</li>
+                    <a href="#skills">
+                        <li class="menu--visible__list-item">skills</li>
+                    </a>
                     <a href="#about">
                         <li class="menu--visible__list-item">about</li>
                     </a>
-                    <li class="menu--visible__list-item">contact</li>
+                    <a href="#contact">
+                        <li class="menu--visible__list-item">contact</li>
+                    </a>
                 </ul>
             </div>
         </div>
@@ -58,14 +71,6 @@
 
         <div class="about__hello">
             <div class="container container--hello">
-
-                <div class="bullets">
-                    <span class="bullets__label">about me</span>
-                    <div class="bullets__item bullets__item--selected"></div>
-                    <div class="bullets__item"></div>
-                    <div class="bullets__item"></div>
-                </div>
-
                 <p class="paragraph about__paragraph about__paragraph--intro">I'm a self-taught who wants to put his knowledge into professional practice. The power of simplicity is something
                     I believe in and I always do my best to write code that is clean, properly structured and light.</p>
 
@@ -158,7 +163,53 @@
                     </div>
                 </div>
             </div>
+
+            <p class="quote quote--project">Take a look at one of my projects</p>
+
+            <a href="http://yelpcamp.ppalyga.com/" target="_blank" class="skills__btn">
+                <div class="paragraph skills__project">
+                    <span class="skills__project-name">YelpCamp</span><br/>A reviews aggregator for campgrounds. Based on
+                    Bootstrap, NodeJS and MongoDB, deployed on Heroku.
+                </div>
+            </a>
+
+            <p class="quote quote--visit">or visit my account on</p>
+
+            <a class="skills__link" href="https://www.freecodecamp.com/ppalyga" target="_blank">
+                <img class="logo--freecodecamp" src="assets/imgs/freecodecamp-logo.png" alt="FreeCodeCamp Logo">
+            </a>
+            <a class="skills__link" href="https://codepen.io/ppalyga/" target="_blank">
+                <img class="logo--codepen" src="assets/imgs/codepen-logo.png" alt="CodePen Logo">
+            </a>
         </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container container--contact">
+            <div class="section-header__container section-header__container--contact">
+                <h2 class="section-header__text">contact me</h2>
+                <div class="section-header__line section-header__line--contact"></div>
+            </div>
+            <p class="paragraph contact__paragraph">
+                If you want to hear more about me or if you are iterested in working with me, please <em class="emphasis">use the form below</em>                and I will respond as soons as possible.
+            </p>
+        </div>
+        <div class="contact__box">
+            <div class="container container--contact">
+                <form class="form form--contact" action="https://formspree.io/p.rzemyslawpalyga@gmail.com" method="POST">
+                    <input class="form__input" type="text" name="name" placeholder="  your name">
+                    <input class="form__input" type="email" name="_replyto" placeholder="  your e-mail">
+                    <textarea class="form__input form__input--textarea" name="message"></textarea>
+                    <input class=form__btn type="submit" value="Send"></input>
+                </form>
+
+                <a href="#menu">
+                    <button class="text-btn contact__btn">BACK TO TOP</button>
+                </a>
+                <div class="contact__line"></div>
+            </div>
+        </div>
+
     </section>
 
     <script src="assets/js/jquery-3.2.1.min.js"></script>
@@ -166,7 +217,8 @@
     <script src="assets/js/hammer-time.min.js"></script>
     <script src="assets/js/jquery.flipster.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/smoothscroll.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
 </body>
 
 </html>
