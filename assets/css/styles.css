@@ -150,6 +150,11 @@ input, textarea {
   float: right;
   position: relative;
   top: 0.7rem;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .menu--no-js__list-item:hover {
   padding-right: 0.5rem;
@@ -273,6 +278,11 @@ input, textarea {
   padding: 2.5rem 3rem;
   background: rgba(24, 24, 17, 0.7);
   border-radius: 2%;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .skills__card--active {
   display: block;
