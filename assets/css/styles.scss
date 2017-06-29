@@ -327,8 +327,7 @@ input, textarea {
         padding: 2.5rem 3rem;
         background: rgba(24, 24, 17, 0.7);
         border-radius: 2%;
-        cursor: default;
-        user-select: none;
+        outline: none;
 
         &--active {
             display: block;
